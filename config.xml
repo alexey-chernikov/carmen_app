@@ -22,6 +22,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
     <plugin name="org.apache.cordova.console" />
     <plugin name="org.apache.cordova.device" />
     <plugin name="org.apache.cordova.device-motion" />
@@ -32,7 +34,7 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="com.phonegap.plugin.statusbar" source="pgb" spec="1.1.0" />
     <icon src="icon.png" />
-    <splash src="loader.gif" />
+    <splash src="icon.png" />
     <icon density="ldpi" platform="android" src="www/icon.png" />
     <icon density="mdpi" platform="android" src="www/icon.png" />
     <icon density="hdpi" platform="android" src="www/icon.png" />
