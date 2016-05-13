@@ -29,6 +29,7 @@
     <plugin name="org.apache.cordova.geolocation" />
     <plugin name="org.apache.cordova.globalization" />
     <plugin name="cordova-plugin-whitelist" />
+    <plugin name="cordova-plugin-splashscreen" />
     <plugin name="com.phonegap.plugin.statusbar" source="pgb" spec="1.1.0" />
     <icon src="icon.png" />
     <icon density="ldpi" platform="android" src="www/icon.png" />
