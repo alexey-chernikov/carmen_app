@@ -35,26 +35,26 @@
     <plugin name="com.phonegap.plugin.statusbar" source="pgb" spec="1.1.0" />
 
     <!-- IOS icons and splashes -->
-    <icon platform="ios" height="60"  src="res/icon/ios/icon-60.png" width="60"  />
-    <icon platform="ios" height="120" src="res/icon/ios/icon-60-2x.png" width="120"  />
+    <icon platform="ios" height="60"  src="res/icons/ios/icon-60.png" width="60"  />
+    <icon platform="ios" height="120" src="res/icons/ios/icon-60-2x.png" width="120"  />
 
-    <icon platform="ios" height="76"  src="res/icon/ios/icon-76.png" width="76"/>
-    <icon platform="ios" height="152" src="res/icon/ios/icon-76-2x.png" width="152" />
+    <icon platform="ios" height="76"  src="res/icons/ios/icon-76.png" width="76"/>
+    <icon platform="ios" height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
 
-    <icon platform="ios" height="29"  src="res/icon/ios/icon-small.png" width="29" />
-    <icon platform="ios" height="58"  src="res/icon/ios/icon-small-2x.png" width="58" />
+    <icon platform="ios" height="29"  src="res/icons/ios/icon-small.png" width="29" />
+    <icon platform="ios" height="58"  src="res/icons/ios/icon-small-2x.png" width="58" />
 
-    <icon platform="ios" height="40"  src="res/icon/ios/icon-40.png"  width="40" />
-    <icon platform="ios" height="80"  src="res/icon/ios/icon-40-2x.png" width="80"  />
+    <icon platform="ios" height="40"  src="res/icons/ios/icon-40.png"  width="40" />
+    <icon platform="ios" height="80"  src="res/icons/ios/icon-40-2x.png" width="80"  />
 
-    <icon platform="ios" height="50"  src="res/icon/ios/icon-50.png"  width="50" />
-    <icon platform="ios" height="100"  src="res/icon/ios/icon-100-2x.png" width="100"  />
+    <icon platform="ios" height="50"  src="res/icons/ios/icon-50.png"  width="50" />
+    <icon platform="ios" height="100"  src="res/icons/ios/icon-100-2x.png" width="100"  />
 
-    <icon platform="ios" height="57" src="res/icon/ios/icon.png" width="57" />
-    <icon platform="ios" height="114" src="res/icon/ios/icon-2x.png" width="114" />
+    <icon platform="ios" height="57" src="res/icons/ios/icon.png" width="57" />
+    <icon platform="ios" height="114" src="res/icons/ios/icon-2x.png" width="114" />
 
-    <icon platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
-    <icon platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <icon platform="ios" height="72" src="res/icons/ios/icon-72.png" width="72" />
+    <icon platform="ios" height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
 
     <!-- iPhone and iPod touch -->
     <splash src="res/screens/ios/screen-iphone-portrait.png" platform="ios" width="320" height="480" />
