@@ -27,8 +27,6 @@
     <meta name="csrf-token" content="AX/8wztwEO9AB/8o69D5i4kzASNCaPQJ37CKayqt2Q7wa97YosW37Pupu+QvPcGWsV7FIxqqqQfROBzaZiBAHQ==" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy"/>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <style>
       html, body, #root {
         height: 100%;
@@ -56,7 +54,59 @@
     <img src="loader.gif">
   </div>
 </div>
-<script src="http://www.car4men.ru/webpack/client_app.js"></script>
+
+<script>
+  var host = "http://www.car4men.ru/";
+  host = "http://192.168.77.145:3000/";
+  var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+
+  function loadError() {
+    alert( "Ошибка загрузки приложения!" );
+  }
+
+  function ajax(url, callback, data, x) {
+    try {
+      x = new(this.XMLHttpRequest || ActiveXObject)('MSXML2.XMLHTTP.3.0');
+      x.open(data ? 'POST' : 'GET', url, 1);
+      x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      x.onreadystatechange = function () {
+        x.readyState > 3 && callback && callback(x.responseText, x);
+      };
+      x.send(data)
+    } catch (e) {
+      loadError();
+    }
+  };
+ 
+  function addScript(remoteURL) {
+    var script = document.createElement('script');
+    script.src = remoteURL;
+    document.body.appendChild(script);
+
+    script.onerror = loadError;
+  }
+
+  
+
+  DOMReady(function() {
+    var build_id = parseInt("client_app");
+    var url = host + "api/utils/js_path";
+    if (build_id) {
+      url = url + '/' + build_id;
+    }
+    ajax(url, function(res) {
+      try {
+        var response = JSON.parse(res);
+        var assetsSrc = 'http:' + response.result.path;
+        addScript(assetsSrc);
+      } catch(e) {
+        loadError();
+      }
+    }, JSON.stringify({timestamp: Date.now()}))
+    
+  })
+</script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
